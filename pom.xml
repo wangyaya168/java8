@@ -1,0 +1,138 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.king</groupId>
+  <artifactId>java8</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>9</source>
+                    <target>9</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <packaging>jar</packaging>
+
+  <name>java8</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <grpc.version>1.0.3</grpc.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- netty -->
+     <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-all</artifactId>
+        <version>4.1.6.Final</version>
+    </dependency>
+    
+     <!-- 读取xml文件 -->
+    <dependency>
+      <groupId>dom4j</groupId>
+      <artifactId>dom4j</artifactId>
+      <version>1.6.1</version>
+    </dependency>
+    
+    <!-- MySQL -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.29</version>
+    </dependency>
+    
+    <!-- 原生zookeeper -->
+		<dependency>
+		    <groupId>org.apache.zookeeper</groupId>
+		    <artifactId>zookeeper</artifactId>
+		    <version>3.4.6</version>
+		</dependency>
+		<dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>1.2.60</version>
+    </dependency>
+		<!--Apache Curator-->
+		<dependency>
+		    <groupId>org.apache.curator</groupId>
+		    <artifactId>curator-framework</artifactId>
+		    <version>2.9.0</version>
+		</dependency>
+		
+		<!-- zkclient -->
+		<dependency>
+		    <groupId>com.101tec</groupId>
+		    <artifactId>zkclient</artifactId>
+		    <version>0.9</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>log4j</groupId>
+		    <artifactId>log4j</artifactId>
+		    <version>1.2.17</version>
+		</dependency>
+		<!-- 
+		Lombok能以简单的注解形式来简化java代码，提高开发人员的开发效率。例如开发中经常需要写的javabean，
+		都需要花时间去添加相应的getter/setter，也许还要去写构造器、equals等方法，而且需要维护，
+		当属性多时会出现大量的getter/setter方法，这些显得很冗长也没有太多技术含量，一旦修改属性，
+		就容易出现忘记修改对应方法的失误。 -->
+		<dependency>
+    		<groupId>org.projectlombok</groupId>
+    		<artifactId>lombok</artifactId>
+    		<version>1.16.20</version>
+    		<scope>provided</scope>
+		</dependency>
+		<!-- Hutool是一个Java工具包，也就是一个工具箱，一个utils集合，
+		它帮助我们简化每一行代码，减少每一个方法，让Java语言也可以简单粗暴。
+		Hutool最初是作者项目中“util”包的一个整理，后来慢慢积累并加入更多非业务相关功能，
+		并广泛学习其它开源项目精髓，经过自己整理修改，最终形成丰富的开源工具集。 -->
+		<dependency>
+   		 	<groupId>cn.hutool</groupId>
+    		<artifactId>hutool-all</artifactId>
+    		<version>4.1.19</version>
+		</dependency>
+	
+	<!-- gRPC -->
+		<dependency>
+			 <groupId>io.grpc</groupId>
+			 <artifactId>grpc-netty</artifactId>
+			 <version>1.0.3</version>
+		</dependency>
+		<dependency>
+			 <groupId>io.grpc</groupId>
+			 <artifactId>grpc-protobuf</artifactId>
+			 <version>1.0.3</version>
+		</dependency>
+		<dependency>
+			 <groupId>io.grpc</groupId>
+			 <artifactId>grpc-stub</artifactId>
+			 <version>1.0.3</version>
+		</dependency>
+		<!-- 转换工具 -->
+
+	   <dependency>
+		  <groupId>org.mybatis</groupId>
+		  <artifactId>mybatis</artifactId>
+		  <version>3.2.8</version>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.mybatis</groupId>
+		  <artifactId>mybatis-spring</artifactId>
+		  <version>1.2.2</version>
+	  </dependency>
+  </dependencies>
+</project>
